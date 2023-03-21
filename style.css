@@ -91,6 +91,10 @@ main section .tabletcontainer form input[type=email] {
   color: #9599A5;
   font-size: 14px;
 }
+main section .tabletcontainer form input[type=email]:hover {
+  color: #FFFFFF;
+  border: none;
+}
 main section .tabletcontainer form input[type=submit] {
   background: #54E6AF;
   box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
@@ -99,6 +103,10 @@ main section .tabletcontainer form input[type=submit] {
   font-size: 14px;
   border: none;
   padding: 9px 109px 9px 109px;
+  cursor: pointer;
+}
+main section .tabletcontainer form input[type=submit]:hover {
+  background: #B3FFE2;
 }
 
 @media (min-width: 768px) {
