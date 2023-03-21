@@ -71,4 +71,29 @@ section .casts .google {
 section .casts .pocket {
   width: 77px;
   height: 15px;
+}
+section form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section form input[type=email] {
+  background: #2C344B;
+  border-radius: 28px;
+  border: none;
+  padding: 9px 150px 9px 32px;
+  margin: 48px 24px 16px 24px;
+  color: #9599A5;
+  font-size: 14px;
+}
+section form input[type=submit] {
+  background: #54E6AF;
+  box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
+  border-radius: 28px;
+  color: #121725;
+  font-size: 14px;
+  border: none;
+  padding: 9px 109px 9px 109px;
 }/*# sourceMappingURL=style.css.map */
