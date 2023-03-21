@@ -16,7 +16,7 @@ body {
 }
 
 main {
-  background-image: url(/assets/mobile/image-host.jpg);
+  background-image: url(./assets/mobile/image-host.jpg);
   background-size: cover;
   background-blend-mode: multiply;
   background-color: #121725;
@@ -118,7 +118,7 @@ main section .tabletcontainer form input[type=submit]:hover {
     background-repeat: no-repeat;
   }
   main .pattern {
-    background-image: url(/assets/desktop/bg-pattern-dots.svg);
+    background-image: url(./assets/desktop/bg-pattern-dots.svg);
     display: block;
     width: 232px;
     height: 104px;
@@ -186,14 +186,14 @@ main section .tabletcontainer form input[type=submit]:hover {
 }
 @media (min-width: 1440px) {
   main {
-    background-image: url(/assets/desktop/image-host.jpg);
+    background-image: url(./assets/desktop/image-host.jpg);
     background-size: 888px 640px;
     background-position: right 130px;
     padding: 102px 0 0 165px;
     margin-bottom: 100px;
   }
   main .pattern {
-    background-image: url(/assets/desktop/bg-pattern-dots.svg);
+    background-image: url(./assets/desktop/bg-pattern-dots.svg);
     display: block;
     width: 232px;
     height: 104px;
