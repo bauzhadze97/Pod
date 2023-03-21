@@ -21,12 +21,26 @@
       <img src="./assets/desktop/pocket-casts.svg" class="pocket">
     </div>
     <form>
-    <input type="email" placeholder="Email address" title="Oops! Please check your email" required>
+    <input type="email" name="email" id="email" placeholder="Email address" data-error="Oops! Please check your email" required>
     <input type="submit" value="Request Access">
     </form>
   </div>
   </section>
   <div class="pattern"></div>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $(function () {
+        var inputs = document.getElementsByTagName("INPUT");
+        for (var i = 0; i < inputs.length; i++) {
+            inputs[i].oninvalid = function (e) {
+                e.target.setCustomValidity("");
+                if (!e.target.validity.valid) {
+                    e.target.setCustomValidity(e.target.getAttribute("data-error"));
+                }
+            };
+        }
+    });
+</script>
 </main>
 </body>
 </html>
