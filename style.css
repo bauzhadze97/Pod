@@ -12,6 +12,7 @@ body {
   font-size: 16px;
   background-color: #121725;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 main {
@@ -23,6 +24,9 @@ main {
   width: 100%;
   height: 100vh;
 }
+main .pattern {
+  display: none;
+}
 main section {
   width: 100%;
   display: flex;
@@ -33,52 +37,52 @@ main section {
 main section .logo {
   padding: 62px 120px 57px 120px;
 }
-main section h1 {
+main section .tabletcontainer h1 {
   color: #54E6AF;
   padding: 0 24px 16px 24px;
   text-transform: uppercase;
   text-align: center;
 }
-main section h1 span {
+main section .tabletcontainer h1 span {
   color: #FFFFFF;
 }
-main section p {
+main section .tabletcontainer p {
   color: #C2CBE5;
   font-size: 15px;
   padding: 0 24px 33px 24px;
   text-align: center;
 }
-main section .casts {
+main section .tabletcontainer .casts {
   width: 100%;
   margin: 0 30px 0 30px;
 }
-main section .casts .spotify {
+main section .tabletcontainer .casts .spotify {
   width: 56px;
   height: 17px;
   margin: 0 23px 0 30px;
 }
-main section .casts .apple {
+main section .tabletcontainer .casts .apple {
   width: 45px;
   height: 17px;
   margin: 0 25px 0 0;
 }
-main section .casts .google {
+main section .tabletcontainer .casts .google {
   width: 73px;
   height: 11px;
   margin: 0 16px 0 0;
 }
-main section .casts .pocket {
+main section .tabletcontainer .casts .pocket {
   width: 77px;
   height: 15px;
 }
-main section form {
+main section .tabletcontainer form {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-main section form input[type=email] {
+main section .tabletcontainer form input[type=email] {
   background: #2C344B;
   border-radius: 28px;
   border: none;
@@ -87,7 +91,7 @@ main section form input[type=email] {
   color: #9599A5;
   font-size: 14px;
 }
-main section form input[type=submit] {
+main section .tabletcontainer form input[type=submit] {
   background: #54E6AF;
   box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
   border-radius: 28px;
@@ -95,4 +99,80 @@ main section form input[type=submit] {
   font-size: 14px;
   border: none;
   padding: 9px 109px 9px 109px;
+}
+
+@media (min-width: 768px) {
+  main {
+    background-image: url(./assets/tablet/image-host.jpg);
+    background-blend-mode: screen;
+    background-position-x: 250px;
+    background-size: 491px 761px;
+    background-repeat: no-repeat;
+  }
+  main .pattern {
+    background-image: url(/assets/desktop/bg-pattern-dots.svg);
+    display: block;
+    width: 232px;
+    height: 104px;
+    background-position-y: bottom;
+    margin: 18em 0 0 30px;
+  }
+  main section {
+    display: flex;
+    justify-content: normal;
+    align-items: flex-start;
+  }
+  main section .logo {
+    padding: 50px 0 0 39px;
+  }
+  main section .tabletcontainer {
+    background-color: #121725;
+    margin: 258px 94px 0 39px;
+    display: block;
+  }
+  main section .tabletcontainer h1 {
+    font-size: 48px;
+    text-align: start;
+    padding: 91px 0 31px 0;
+  }
+  main section .tabletcontainer p {
+    font-size: 18px;
+    text-align: start;
+    padding: 0 190px 40px 0;
+  }
+  main section .tabletcontainer .casts {
+    margin: 160px 0 0 0;
+  }
+  main section .tabletcontainer .casts .spotify {
+    width: 95.9px;
+    height: 28.91px;
+    margin: 0 23px 0 0;
+  }
+  main section .tabletcontainer .casts .apple {
+    width: 78px;
+    height: 29px;
+    margin: 0 25px 0 0;
+  }
+  main section .tabletcontainer .casts .google {
+    width: 125px;
+    height: 18px;
+    margin: 0 16px 0 0;
+  }
+  main section .tabletcontainer .casts .pocket {
+    width: 129px;
+    height: 26px;
+  }
+  main section .tabletcontainer form {
+    margin: -160px 0 0 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  main section .tabletcontainer form input[type=email] {
+    margin: 0;
+  }
+  main section .tabletcontainer form input[type=submit] {
+    margin: 0 0 0 -158px;
+    padding: 9px 27px 9px 27px;
+  }
 }/*# sourceMappingURL=style.css.map */
