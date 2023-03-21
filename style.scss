@@ -44,4 +44,27 @@ section{
         padding: 0 24px 33px 24px;
         text-align: center;
     }
+    & .casts{
+        width: 100%;
+        margin: 0 30px 0 30px;
+        & .spotify{
+          width: 56px;
+          height: 17px;
+          margin: 0 23px 0 30px;
+        }
+        & .apple{
+           width: 45px;
+           height: 17px;
+           margin: 0 25px 0 0;
+        }
+        & .google{
+          width: 73px;
+          height: 11px;
+          margin: 0 16px 0 0;
+        }
+        & .pocket{
+          width: 77px;
+          height: 15px;
+        }
+    }
 }
