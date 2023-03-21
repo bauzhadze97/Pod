@@ -175,4 +175,44 @@ main section .tabletcontainer form input[type=submit] {
     margin: 0 0 0 -158px;
     padding: 9px 27px 9px 27px;
   }
+}
+@media (min-width: 1440px) {
+  main {
+    background-image: url(/assets/desktop/image-host.jpg);
+    background-size: 888px 640px;
+    background-position: right 130px;
+    padding: 102px 0 0 165px;
+    margin-bottom: 100px;
+  }
+  main .pattern {
+    background-image: url(/assets/desktop/bg-pattern-dots.svg);
+    display: block;
+    width: 232px;
+    height: 104px;
+    margin: -52px 0 0 1043px;
+  }
+  main section .logo {
+    padding: 0;
+  }
+  main section .tabletcontainer {
+    margin: 103px 552px 0 0;
+    height: 510px;
+  }
+  main section .tabletcontainer h1 {
+    font-size: 52px;
+    padding: 88px 58px 24px 0;
+  }
+  main section .tabletcontainer p {
+    padding: 0 278px 0 0;
+  }
+  main section .tabletcontainer form {
+    margin: -160px 0 0 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  main section .tabletcontainer form input[type=email] {
+    margin: 0;
+    padding: 14px 280px 14px 32px;
+  }
 }/*# sourceMappingURL=style.css.map */
