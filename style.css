@@ -23,63 +23,62 @@ main {
   width: 100%;
   height: 100vh;
 }
-
-section {
+main section {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-section .logo {
+main section .logo {
   padding: 62px 120px 57px 120px;
 }
-section h1 {
+main section h1 {
   color: #54E6AF;
   padding: 0 24px 16px 24px;
   text-transform: uppercase;
   text-align: center;
 }
-section h1 span {
+main section h1 span {
   color: #FFFFFF;
 }
-section p {
+main section p {
   color: #C2CBE5;
   font-size: 15px;
   padding: 0 24px 33px 24px;
   text-align: center;
 }
-section .casts {
+main section .casts {
   width: 100%;
   margin: 0 30px 0 30px;
 }
-section .casts .spotify {
+main section .casts .spotify {
   width: 56px;
   height: 17px;
   margin: 0 23px 0 30px;
 }
-section .casts .apple {
+main section .casts .apple {
   width: 45px;
   height: 17px;
   margin: 0 25px 0 0;
 }
-section .casts .google {
+main section .casts .google {
   width: 73px;
   height: 11px;
   margin: 0 16px 0 0;
 }
-section .casts .pocket {
+main section .casts .pocket {
   width: 77px;
   height: 15px;
 }
-section form {
+main section form {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-section form input[type=email] {
+main section form input[type=email] {
   background: #2C344B;
   border-radius: 28px;
   border: none;
@@ -88,7 +87,7 @@ section form input[type=email] {
   color: #9599A5;
   font-size: 14px;
 }
-section form input[type=submit] {
+main section form input[type=submit] {
   background: #54E6AF;
   box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
   border-radius: 28px;
